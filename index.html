@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Echo</title>
+</head>
+<body>
+	<script>
+		navigator.serviceWorker.register('sw.js').then(function() {
+			document.body.innerHTML =
+				'[installation successful] [potentially hazardous] <a href="?%3Ch1%3ECreate%20Stuff%3C%2Fh1%3E">Now Go!</a>';
+		});
+	</script>
+</body>
+</html>
